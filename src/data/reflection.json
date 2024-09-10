@@ -1,0 +1,22 @@
+{
+  "bahagia": [
+    "Apa yang membuatmu bahagia hari ini?",
+    "Bagaimana kamu bisa terus merasa bahagia?"
+  ],
+  "sedih": [
+    "Apa yang membuatmu sedih?",
+    "Apa yang bisa kamu lakukan untuk merasa lebih baik?"
+  ],
+  "stres": [
+    "Apa yang membuatmu stres?",
+    "Apa yang bisa membantu mengurangi stresmu?"
+  ],
+  "tenang": [
+    "Apa yang membuatmu merasa tenang?",
+    "Bagaimana kamu bisa menjaga ketenanganmu?"
+  ],
+  "marah": [
+    "Apa yang membuatmu marah?",
+    "Apa yang bisa membantu menenangkan dirimu?"
+  ]
+}

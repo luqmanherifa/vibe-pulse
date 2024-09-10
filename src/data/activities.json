@@ -1,0 +1,6 @@
+{
+  "emotion": ["lelah", "santai", "puas"],
+  "sleep": ["tidur nyenyak", "tidur tidak nyenyak"],
+  "health": ["baik", "buruk"],
+  "eating": ["cukup", "kurang"]
+}

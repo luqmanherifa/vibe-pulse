@@ -43,20 +43,27 @@ function Mood() {
       <div>
         {!showReflection && !showSuggestions && !showActivity && (
           <div className="ml-8 mr-8 pt-8">
-            <h1 className="text-2xl font-normal mb-6 text-eel w-60 font-bricolage">
-              Bagaimana kabarmu sekarang?
-            </h1>
-            <p className="text-lg font-medium mb-4 text-eel">
+            <div className="flex items-center mb-6">
+              <span className="w-12 h-12 bg-bee rounded-full mr-5"></span>{" "}
+              <h1 className="text-2xl font-normal text-eel w-60 font-bricolage">
+                Bagaimana kabarmu sekarang?
+              </h1>
+            </div>
+            <p className="text-xl font-medium mb-4 text-eel">
               Pilih gambaran perasaanmu
             </p>
             <div className="flex flex-col gap-3">
-              {moodsData.moods.map((moodType) => (
+              {moodsData.moods.map((mood) => (
                 <button
-                  key={moodType}
-                  className="text-eel text-lg font-medium px-6 py-3 rounded-xl border-swan border-2 hover:border-humpback hover:bg-blue-50 hover:text-humpback text-left"
-                  onClick={() => handleMoodSelect(moodType)}
+                  key={mood.type}
+                  className="flex items-center text-eel text-lg font-medium px-6 py-4 rounded-xl border-swan border-2 hover:border-humpback hover:bg-blue-50 hover:text-humpback text-left"
+                  onClick={() => handleMoodSelect(mood.type)}
                 >
-                  {moodType}
+                  <span
+                    className="w-7 h-7 rounded-full mr-3"
+                    style={{ backgroundColor: mood.color }}
+                  ></span>
+                  {mood.type}
                 </button>
               ))}
             </div>
@@ -127,8 +134,9 @@ function Mood() {
         )}
 
         <div className="fixed bottom-0 left-0 w-full pb-8 text-center">
-          <button className="bg-green-600 text-white px-6 py-3 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105 active:scale-95">
-            Tombol Tetap
+          <button class="relative bg-bee border-0 border-b-4 border-transparent rounded-xl text-white font-bold text-base uppercase px-5 py-3 transition-all duration-200 hover:brightness-110 active:border-b-0 active:pb-[10px] disabled:cursor-auto focus:outline-none">
+            Lanjutkan
+            <span class="absolute inset-0 bg-yellow-600 border-0 border-b-4 border-transparent rounded-xl -z-10"></span>
           </button>
         </div>
       </div>

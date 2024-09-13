@@ -1,3 +1,9 @@
 {
-  "moods": ["Bahagia", "Sedih", "Stres", "Tenang", "Marah"]
+  "moods": [
+    { "type": "Bahagia", "color": "#2B70C9" },
+    { "type": "Sedih", "color": "#58CC02" },
+    { "type": "Stres", "color": "#CE82FF" },
+    { "type": "Tenang", "color": "#FF9600" },
+    { "type": "Marah", "color": "#FF4B4B" }
+  ]
 }
